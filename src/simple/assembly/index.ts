@@ -1,6 +1,7 @@
 import { storage, Context } from "near-sdk-as"
 
 // return the string 'hello world'
+
 export function helloWorld(): string {
   const predecessor = Context.predecessor
   return 'hello ' + predecessor
@@ -24,4 +25,3 @@ export function write(key: string, value: string): string {
 function storageReport(): string {
   return `storage [ ${Context.storageUsage} bytes ]`
 }
-
