@@ -2,6 +2,15 @@
 
 This is a good project to use as a starting point for your AssemblyScript project.
 
+## Requirements
+
+In order to have little to no troubles, you should have installed:
+
+npm Node.JS package manager
+git version control
+yarn (npm install -g yarn@1.22.15)
+near-cli
+
 ## Samples
 
 This repository includes a complete project structure for AssemblyScript contracts targeting the NEAR platform.

@@ -2,9 +2,9 @@ import { storage, Context } from "near-sdk-as"
 
 // return the string 'hello world'
 export function helloWorld(): string {
-  return 'hello world'
+  const predecessor = Context.predecessor
+  return 'hello ' + predecessor
 }
-
 // read the given key from account (contract) storage
 export function read(key: string): string {
   if (storage.hasKey(key)) {
@@ -24,3 +24,4 @@ export function write(key: string, value: string): string {
 function storageReport(): string {
   return `storage [ ${Context.storageUsage} bytes ]`
 }
+
